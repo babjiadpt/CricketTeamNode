@@ -1,6 +1,9 @@
+//GET PLAYERS API
 GET http://localhost:3000/players/
 
 ###
+
+//CRATE A PLAYER API
 POST http://localhost:3000/players/
 Content-Type: application/json
 
@@ -12,11 +15,12 @@ Content-Type: application/json
 
 ###
 
+//Returns a player based on a player ID API
 GET http://localhost:3000/players/1/
 
 ###
 
-
+//UpDate Player Details API
 PUT http://localhost:3000/players/2/
 Content-Type: application/json
 
@@ -28,4 +32,5 @@ Content-Type: application/json
 
 ###
 
+//DELETE Player Details API
 DELETE http://localhost:3000/players/3/

@@ -53,7 +53,6 @@ app.get("/players/", async (request, response) => {
 });
 
 //CRATE A PLAYER API
-
 app.post("/players/", async (request, response) => {
   try {
     const { playerName, jerseyNumber, role } = request.body;
@@ -109,3 +108,5 @@ app.delete("/players/:playerId/", async (request, response) => {
   await db.run(deletePlayerQuery);
   response.send("Player Removed");
 });
+
+module.exports = app;
